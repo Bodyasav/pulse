@@ -1,0 +1,43 @@
+.better {
+    min-height: 473px;
+    padding: 75px 0 62px 0;
+    background: #F6F6F6;
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    &__icons {
+        width: 950px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        margin-top: 65px;
+        width: 270px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 29px;
+        align-items: flex-end;
+        text-align: center;
+        color: #0D0D0D;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+    &__bitvin {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        align-items: flex-end;
+        text-align: center;
+        color: #0D0D0D; 
+        a {
+            color: $main-color;
+        }   
+    }
+}

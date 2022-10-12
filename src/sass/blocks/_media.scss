@@ -1,0 +1,146 @@
+@media(max-width:991px) {
+    .promo {
+        .header {
+            padding: 0 20px 0 20px;
+            &__logo {   
+                width: 200px;
+            }
+            &__phone {
+                font-size: 16px;
+                margin-right: 1px;
+            }
+        }
+        &__wrapper {
+            margin-right: 53px;
+        }
+    }
+    .better {
+        &__icons {
+            padding: 0 10px 0 10px;
+            width: 895px;
+        }
+    }
+    .consultation {
+       &__inet {
+        margin-left: 20px;
+       }
+       .subtitle {
+        line-height: 19px;
+        font-size: 16px;
+       }
+    }
+}
+
+@media(max-width:892px) {
+    .better {
+        &__icons {
+            width: 700px;
+        }
+    }
+}
+@media(max-width: 701px) {
+    .better {
+        &__icons {
+            width: 550px;
+        }
+    }
+    .consultation {
+       .title {
+        &_left {
+            font-size: 24px;
+            line-height: 32px;
+            }
+        }
+        .feed-form {
+            width: 255px;
+            .button {
+                &_submit {
+                    height: 49px;
+                    font-size: 14px;
+                }
+            }
+        }
+       
+    }
+}
+
+@media(max-width:575px) {
+    .promo {
+        &__header {
+            font-size: 29px; 
+        }
+        &__subheader {
+            font-size: 16px;
+        }
+        &__icons {
+            width: 380px;
+
+        }
+        
+        .header {
+            &__logo {
+                width: 300px;
+                margin-left: 5px;
+                img {
+                    width: 80%;  
+                }   
+            }
+            &__official {
+                display: none;
+              }
+            &__contacts {
+                margin-right: 5px;
+                .button {
+                    width: 120px;
+                    line-height: 13px;
+                    font-size: 10px;
+                }
+            }
+            &__phone {
+                margin-right: 3px;
+                font-size: 11px;
+            }
+        }
+
+        &__wrapper {
+            margin-right: 0px;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         
+
+    }
+    .better {
+        &__icons {
+            width: 430px;
+        }
+        &__icon {
+            margin-top: 11px;
+            font-size: 12px;
+            line-height: 11px;
+        }
+        .title {
+            font-size: 25px;
+        }
+        &__bitvin {
+           font-size: 11px;
+           a {
+            color: red;
+           }
+        }
+    }
+    .consultation {
+        .title {
+            &_left {
+               font-size: 18px;
+               line-height: 24px; 
+            }  
+        }
+        .subtitle {
+            font-size: 13px;
+            line-height: 14px;
+        }
+    }
+}
