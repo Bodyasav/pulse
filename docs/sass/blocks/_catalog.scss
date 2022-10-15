@@ -105,6 +105,16 @@
             color: #050505;
 
         }
+        &__wrapper {
+            display: flex;
+            width: 200%;
+        }
+        &__content {
+            width: 50%;
+        }
+        &__lisy {
+            width: 50%;
+        }
        
     }
 }
