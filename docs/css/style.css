@@ -1,3 +1,31 @@
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -155,6 +183,7 @@
   border-radius: 5px;
   border: none;
   font-weight: 500;
+  margin-top: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 19px;
@@ -250,6 +279,14 @@
 }
 .better__bitvin a {
   color: #c70101;
+}
+.better__img_animated {
+  -webkit-animation: heartbeat 1.5s ease infinite;
+          animation: heartbeat 1.5s ease infinite;
+}
+.better__img_animated:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 @media (max-width: 991px) {
@@ -375,6 +412,15 @@
   min-height: 680px;
   padding: 100px 0 100px 0;
   background: url("../img/bg/bg2.png") center center/cover no-repeat;
+}
+.consultation .error {
+  border: 1px solid red;
+}
+.consultation label.error {
+  color: white;
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .title {
@@ -634,7 +680,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #555555;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 .catalog-item__list li:before {
   content: "";
@@ -661,6 +707,9 @@
   color: #c70101;
 }
 
+.fitback {
+  margin-bottom: 30px;
+}
 .fitback__wrapper {
   margin-top: 60px;
   display: -webkit-box;
@@ -752,6 +801,9 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.footer iframe {
+  width: 100%;
+}
 
 .overlay {
   display: none;
@@ -800,7 +852,27 @@
 .modal_mini {
   min-height: 143px;
 }
+.modal .error {
+  border: 1px solid red;
+}
+.modal label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
 #consultation, #order, #thanks {
   display: none;
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+.pageup img {
+  width: 100%;
 }

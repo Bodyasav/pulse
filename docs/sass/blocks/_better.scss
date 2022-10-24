@@ -2,7 +2,6 @@
     min-height: 473px;
     padding: 75px 0 62px 0;
     background: #F6F6F6;
-    
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -27,6 +26,7 @@
             margin: 0 auto;
             margin-bottom: 30px;
         }
+        
     }
     &__bitvin {
         margin-top: 20px;
@@ -39,5 +39,13 @@
         a {
             color: $main-color;
         }   
+    }
+    &__img {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
 }
